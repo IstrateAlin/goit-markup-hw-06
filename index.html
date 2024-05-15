@@ -21,8 +21,8 @@
         <h3 class="header__logo"><span class="logo__part">Web</span>Studio</h3>
         <nav class="header__navigation">
           <ul>
-            <li><a href="./index.html" >Studio</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./index.html" class="active" >Studio</a></li>
+            <li><a href="./portfolio.html" class="active">Portfolio</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
@@ -420,13 +420,72 @@
               </li>
                  </a>
             </ul>
-          </div>        
+          </div>   
+          
+          <div class="footer__subscribe">
+           <form name="subscribe-form" class="subscribe-form">
+            <label class="sub-form__position">
+              Subscribe to the newsletter
+              <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
+            </label>
+             <button type="submit" class="sub-btn">Subscribe
+
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg/symbol-sub.svg#icon-sub-icon" />
+              </svg>
+             </button>
+           </form>
+          </div>
       </div>    
     </footer>
 
   <div data-modal class="is-hidden">
     <div data-modal-content>
       <button data-modal-close class="modal__btn" type="button">X</button>
+     <h2 class="modal-title">Leave your information and we'll call you back</h2>
+
+     <form  name="modal-form" class="modal-form">
+     <label class="modal-form__content">
+      Name
+      <input type="text" name="username" class="modal-input" />
+     <svg width="18px" height="18px">
+      <use href="./images/icons.svg/symbol-modal.svg#icon-username" />
+     </svg>
+     </label>
+
+     <label class="modal-form__content">
+      Telephone
+      <input type="tel" name="userphone" class="modal-input" />
+      <svg width="18px" height="18px">
+       <use href="./images/icons.svg/symbol-modal.svg#icon-userphone" />
+     </svg>
+      </label>
+
+      <label  class="modal-form__content">
+        E-mail
+      <input type="email" name="useremail" class="modal-input" />
+      <svg width="18px" height="18px">
+        <use href="./images/icons.svg/symbol-modal.svg#icon-useremail" />
+      </svg>
+      </label>
+
+      <label class="modal-form__content" >
+      Comments
+      <textarea name="comments" rows="5" placeholder="Enter the text"  class="modal-comments"></textarea>
+      </label>
+
+      <label class="modal-form__content modal-checked">
+       <input type="checkbox" name="agree" value="agree" class="modal-input__checkbox" />  
+      <span class="replace-checkbox modal-checkbox__position">
+        <svg>
+          <use href="./images/icons.svg/symbol-modal.svg#icon-checked" />
+        </svg>
+      </span>
+        I agree with the letter and accept the
+        <a href="#" class="terms"> Terms and Conditions</a> 
+      </label>
+     </form>
+     <button button type="submit" class="modal-btn">Send</button>
     </div>
   </div>
     <script src="./modal.js"></script>

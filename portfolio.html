@@ -23,8 +23,8 @@
         <h3 class="header__logo"><span class="logo__part">Web</span>Studio</h3>
         <nav class="header__navigation">
           <ul>
-            <li><a href="./index.html">Studio</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./index.html" class="active">Studio</a></li>
+            <li><a href="./portfolio.html" class="active">Portfolio</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
@@ -316,6 +316,26 @@
               </li>
             </a>
           </ul>
+        </div>
+        <div class="footer__subscribe">
+          <form name="subscribe-form" class="subscribe-form">
+            <label class="sub-form__position">
+              Subscribe to the newsletter
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="subscribe-input"
+              />
+            </label>
+            <button type="submit" class="sub-btn">
+              Subscribe
+
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg/symbol-sub.svg#icon-sub-icon" />
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
